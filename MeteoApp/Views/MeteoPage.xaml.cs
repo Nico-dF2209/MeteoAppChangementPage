@@ -14,16 +14,14 @@ public partial class MeteoPage : ContentPage
     public MeteoPage()
     {
         InitializeComponent();
-
-        
     }
 
     public async void LoadCity(City city)
     {
-        BindingContext = new MeteoCity(city.Latitude, city.Longitude);
-        Meteo meteo = new Meteo();
+        //BindingContext = new MeteoCity(city.Latitude, city.Longitude);
+       // Meteo meteo = new Meteo();
 
-        BindingContext = meteo;
+        BindingContext = await MeteoCity.SearchMeteo(city.Latitude, city.Longitude);
     }
 
 }

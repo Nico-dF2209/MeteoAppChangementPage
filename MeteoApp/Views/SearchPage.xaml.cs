@@ -13,7 +13,7 @@ public partial class SearchPage : ContentPage
         BindingContext = new CitySearchResult();
     }
 
-    private async void SearchClicked(object sender, EventArgs e)
+    private void SearchClicked(object sender, EventArgs e)
     {
         (BindingContext as CitySearchResult).SearchCity(SearchCityBar.Text);
 

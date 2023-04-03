@@ -7,16 +7,9 @@
     xmlns:views="clr-namespace:MeteoApp.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <TabBar>
-       <ShellContent
+        <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate views:SearchPage}"
         Route="MainPage" />
 
-        <ShellContent
-        Title="MeteoPage"
-        ContentTemplate="{DataTemplate views:MeteoPage}"
-        Route="Meteo"/> 
-    </TabBar>
-    
 </Shell>
